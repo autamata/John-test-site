@@ -52,14 +52,14 @@
     <title>Carousel Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!--  <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+  <!--  <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -80,6 +80,10 @@
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
     <style type="text/css">
 
@@ -107,12 +111,14 @@
     #section1 {color: #fff; background-color: #1E88E5;}
     #section2 {color: #fff; background-color: #673ab7;}
     #section3 {color: #fff; background-color: #ff9800;}
+    #section4 {color: #fff; background-color: #591039;}
+    #section5 {color: #fff; background-color: #16b20e;}
     
   
     </style>
   </head>
 <!-- NAVBAR ================================================== -->
-  <body data-spy="scroll" data-target=".navbar" data-offset="20" style="background-color: #babec4;">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" style="background-color: #babec4;">
      
     <div class="container">
 
@@ -125,7 +131,7 @@
   	  </div>
 
 	    <div class="container">
-			    <div id="navbar" class="navbar-collapse collapse">
+<!--			    <div id="navbar" class="navbar-collapse collapse">
 	          <form class="navbar-form navbar-right">
 	            <div class="form-group">
 	              <input type="text" placeholder="Search" class="form-control" id="focusedInput">
@@ -133,22 +139,43 @@
 	            <button type="submit" class="btn btn-success">Search</button>
 	          </form>
 	        </div><!--search -->
+
+<form class="navbar-form navbar-right" role="search">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-info">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+            </div>
+        </div>
+  </form>
+-->
+ <form class="navbar-form navbar-right">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search">
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
+
+
 		  </div>      
 
       <div class="container">	
- 
+
+      <!--Affix and Scrollspy-->
         <nav class="navbar navbar-inverse " data-spy="affix" data-offset-top="0">
-          <div class="container-fluid">
-            
-           
+          <div class="container-fluid">                       
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">About Us</a></li>
-                <li><a href="#about">Our Approach</a></li>
-                <li><a href="#contact">Our Work</a></li>
-                <li><a href="#contact">Clients</a></li>
-                <li><a href="#contact">Resources</a></li>
+                <li><a href="#section1">Our Approach</a></li>
+                <li><a href="#section2">Our Work</a></li>
+                <li><a href="#section3">Clients</a></li>
+                <li><a href="#section4">Resources</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <a href="#section5" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
@@ -162,7 +189,9 @@
               </ul>
            
         </div>
-        </nav>
+        </nav> 
+
+
     </div>
     </div>
 
@@ -329,22 +358,33 @@
 
           <div class="col-md-12">
               <div id="section1" class="container-fluid">
-                  <h1>Section 1</h1>
+                  <h1>Our Approah</h1>
                   <p>Try to scroll this section and look at the navigation list while scrolling!</p>
               </div>
 
                <hr class="featurette-divider"> 
 
               <div id="section2" class="container-fluid">
-                  <h1>Section 2</h1>
+                  <h1>Our Work</h1>
                   <p>Try to scroll this section and look at the navigation list while scrolling!</p>
               </div>
 
                <hr class="featurette-divider"> 
 
               <div id="section3" class="container-fluid">
-                  <h1>Section 3</h1>
-                  <p>Try to scroll this section and look at the navigation list while scrolling!</p></div>
+                  <h1>Clients</h1>
+                  <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+              </div>
+
+              <div id="section4" class="container-fluid">
+                  <h1>Resources</h1>
+                  <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+              </div>
+
+              <div id="section5" class="container-fluid">
+                  <h1>Dropdown</h1>
+                  <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+              </div>
           </div>
 
       </div><!-- /.row -->
